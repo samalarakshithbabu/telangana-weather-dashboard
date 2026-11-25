@@ -1,4 +1,4 @@
-# 🌤️ Telangana Weather Analytics & Climate Dashboard (Enhanced Edition)
+# 🌤️ Telangana Weather Analytics & Climate Dashboard 
 
 An interactive Business Intelligence dashboard built using **Microsoft Power BI** to analyze historical climate, precipitation, and thermal patterns across various districts in Telangana. This enhanced version includes Python data pipelines, SQL integration, anomaly detection, drought risk scoring, and forecasting capabilities.
 
