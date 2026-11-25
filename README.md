@@ -229,13 +229,11 @@ telangana-dashboard/
 
 ## 👨‍💻 Author
 
-**SAI LAKSHMI RAJULapati**
+**SAMALA RAKSHITH BABU **
 
 B.Tech in CSE [DATA SCIENCE]
 
-GitHub: https://github.com/SAI-798
 
-LinkedIn: https://www.linkedin.com/in/sai-lakshmi-rajulapati/
 
 ---
 
