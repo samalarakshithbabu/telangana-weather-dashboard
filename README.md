@@ -1,6 +1,62 @@
 # Telangana Weather Analytics Dashboard (2021-2024)
 
+[![GitHub stars](https://img.shields.io/github/stars/samalarakshithbabu/telangana-weather-dashboard)](https://github.com/samalarakshithbabu/telangana-weather-dashboard/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/samalarakshithbabu/telangana-weather-dashboard)](https://github.com/samalarakshithbabu/telangana-weather-dashboard/network)
+[![GitHub issues](https://img.shields.io/github/issues/samalarakshithbabu/telangana-weather-dashboard)](https://github.com/samalarakshithbabu/telangana-weather-dashboard/issues)
+[![GitHub license](https://img.shields.io/github/license/samalarakshithbabu/telangana-weather-dashboard)](https://github.com/samalarakshithbabu/telangana-weather-dashboard/blob/main/LICENSE)
+![Python](https://img.shields.io/badge/python-3.8%2B-blue)
+![Power BI](https://img.shields.io/badge/Power%20BI-Desktop-yellow)
+![Last Commit](https://img.shields.io/github/last-commit/samalarakshithbabu/telangana-weather-dashboard)
+
 An interactive Business Intelligence dashboard built using **Microsoft Power BI** to analyze historical climate, precipitation, and thermal patterns across districts in Telangana. Includes Python data pipelines, SQL integration, anomaly detection, drought risk scoring, and 90-day forecasting.
+
+---
+
+## System Architecture
+
+```mermaid
+flowchart LR
+    subgraph Raw Data Layer
+        CSV[CSV/Excel Files]
+        Weather[Weather Data]
+    end
+
+    subgraph ETL Pipeline
+        Python[Python ETL]
+        Clean[Cleaned Data]
+        Validate[Validation]
+    end
+
+    subgraph Database Layer
+        SQLite[(SQLite DB)]
+        Tables[Tables with Indexes]
+    end
+
+    subgraph Analytics
+        Anomaly[Anomaly Detection]
+        Forecast[90-Day Forecast]
+        Risk[Risk Scoring]
+    end
+
+    subgraph Visualization
+        PowerBI[Power BI Dashboard]
+        Pages[7 Dashboard Pages]
+    end
+
+    CSV --> Python
+    Weather --> Python
+    Python --> Validate
+    Validate --> Clean
+    Clean --> SQLite
+    SQLite --> Tables
+    Tables --> Anomaly
+    Tables --> Forecast
+    Tables --> Risk
+    Anomaly --> PowerBI
+    Forecast --> PowerBI
+    Risk --> PowerBI
+    PowerBI --> Pages
+```
 
 ---
 
